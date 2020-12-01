@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-09-30 00:07+0000\n"
+"POT-Creation-Date: 2020-12-01 00:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -316,7 +316,7 @@ msgid ""
 "{time}. Reason of the {action}: {reason}"
 msgstr ""
 
-#: warnsystem/api.py:1382
+#: warnsystem/api.py:1389
 msgid "{member} you're sending messages too fast!"
 msgstr ""
 
@@ -520,9 +520,9 @@ msgstr ""
 msgid ""
 "\\n        Trigger actions when a member get x warnings within the specified"
 " time.\\n\\n        For example, if a member gets 3 warnings within a day, "
-"you can make the bot automatically\\nset him a level 3 warning with the "
-"given reason.\\n        It is also possible to only include warnings given "
-"by the bot when counting.\\n        "
+"you can make the bot automatically set him a level 3 warning with the given "
+"reason.\\n        It is also possible to only include warnings given by the "
+"bot when counting.\\n        "
 msgstr ""
 
 #: warnsystem/automod.py:263

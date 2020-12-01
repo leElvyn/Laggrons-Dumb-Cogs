@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: laggrons-dumb-cogs\n"
-"POT-Creation-Date: 2020-09-30 00:07+0000\n"
+"POT-Creation-Date: 2020-12-01 00:36+0000\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -291,7 +291,7 @@ msgstr ""
 msgid "End of timed {action} of {member} requested by {author} that lasted for {time}. Reason of the {action}: {reason}"
 msgstr ""
 
-#: warnsystem/api.py:1382
+#: warnsystem/api.py:1389
 msgid "{member} you're sending messages too fast!"
 msgstr ""
 
@@ -479,7 +479,7 @@ msgstr ""
 
 #: warnsystem/automod.py:252
 #, docstring
-msgid "\\n        Trigger actions when a member get x warnings within the specified time.\\n\\n        For example, if a member gets 3 warnings within a day, you can make the bot automatically\\nset him a level 3 warning with the given reason.\\n        It is also possible to only include warnings given by the bot when counting.\\n        "
+msgid "\\n        Trigger actions when a member get x warnings within the specified time.\\n\\n        For example, if a member gets 3 warnings within a day, you can make the bot automatically set him a level 3 warning with the given reason.\\n        It is also possible to only include warnings given by the bot when counting.\\n        "
 msgstr ""
 
 #: warnsystem/automod.py:263
