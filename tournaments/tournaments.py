@@ -128,18 +128,7 @@ class Tournaments(
         """
         Get informations about the cog.
         """
-        await ctx.send(
-            _(
-                "Laggron's Dumb Cogs V3 - tournaments\n\n"
-                "Version: {0.__version__}\n"
-                "Authors: {0.__author__[0]}, {0.__author__[1]} and {0.__author__[2]}\n\n"
-                "Github repository: https://github.com/retke/Laggrons-Dumb-Cogs/tree/v3\n"
-                "Discord server: https://discord.gg/AVzjfpR\n"
-                "Documentation: http://laggrons-dumb-cogs.readthedocs.io/\n"
-                "Help translating the cog: https://crowdin.com/project/laggrons-dumb-cogs/\n\n"
-                "Support my work on Patreon: https://www.patreon.com/retke"
-            ).format(self)
-        )
+        await ctx.send(self.templates.tournamentsinfo(self))
 
     async def _restore_tournament(self, guild: discord.Guild, data: dict = None) -> Tournament:
         if data is None:
