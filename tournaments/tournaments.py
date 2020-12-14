@@ -15,7 +15,7 @@ from redbot.core.bot import Red
 from redbot.core.data_manager import cog_data_path
 from redbot.core.i18n import Translator, cog_i18n
 
-from .objects import Tournament, ChallongeTournament
+from .objects import Tournament, ChallongeTournament, templates
 from .games import Games
 from .registration import Registration
 from .settings import Settings
@@ -117,6 +117,8 @@ class Tournaments(
         # see registration.py
         self.registration_loop.start()
         self.registration_loop_task_errors = 0
+
+        self.templates = templates.Templates(bot, self.data)
 
     __version__ = "1.0.0"
     __author__ = ["retke (El Laggron)", "Wonderfall", "Xyleff"]
