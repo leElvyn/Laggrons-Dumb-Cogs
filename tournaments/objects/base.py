@@ -19,6 +19,8 @@ from datetime import datetime, timedelta, timezone
 from babel.dates import format_date, format_time
 from typing import Optional, Tuple, List, Union
 
+from .templates import template
+
 from redbot import __version__ as red_version
 from redbot.core import Config
 from redbot.core.bot import Red

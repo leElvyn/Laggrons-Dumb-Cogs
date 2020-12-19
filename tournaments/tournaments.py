@@ -118,7 +118,7 @@ class Tournaments(
         self.registration_loop.start()
         self.registration_loop_task_errors = 0
 
-        self.templates = templates.Templates(bot, self.data)
+        templates.template = templates.Templates(bot, self.data)
 
     __version__ = "1.0.0"
     __author__ = ["retke (El Laggron)", "Wonderfall", "Xyleff"]
@@ -128,7 +128,7 @@ class Tournaments(
         """
         Get informations about the cog.
         """
-        await ctx.send(self.templates.tournamentsinfo(self))
+        await ctx.send(templates.template.tournaments_tournamentsinfo(self))
 
     async def _restore_tournament(self, guild: discord.Guild, data: dict = None) -> Tournament:
         if data is None:

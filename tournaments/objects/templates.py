@@ -27,7 +27,7 @@ class Templates():
     def __init__(self, bot, data):
         self.data = data
 
-    def tournamentsinfo(self, ctxSelf):
+    def tournaments_tournamentsinfo(self, ctxSelf):
         return _(
                 "Laggron's Dumb Cogs V3 - tournaments\n\n"
                 "Version: {0.__version__}\n"
@@ -38,3 +38,9 @@ class Templates():
                 "Help translating the cog: https://crowdin.com/project/laggrons-dumb-cogs/\n\n"
                 "Support my work on Patreon: https://www.patreon.com/retke"
             ).format(ctxSelf)
+    
+    def challonge():
+        pass
+
+template = None
+#blank object to import it befor it is created
