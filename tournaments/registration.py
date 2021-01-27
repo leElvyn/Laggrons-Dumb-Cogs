@@ -341,7 +341,9 @@ there are spaces).
             )
             if result:
                 tournament.ignored_events.append("register_second_start")
-        await tournament.start_registration()
+        if tournament.register_channel.permissions_for(ctx.guild.me).manage_messages:
+            ctx.send(_("I don't have the permission to pin messages in {channel}.").format(channel=tournament.register_channel.mention))
+            retur
         await ctx.tick()
 
     @register.command(name="stop")

@@ -282,6 +282,8 @@ enter a command to register or unregister.
             await ctx.send(_("I don't have the permission to read messages in this channel."))
         elif not channel.permissions_for(guild.me).send_messages:
             await ctx.send(_("I don't have the permission to send messages in this channel."))
+        elif not channel.permissions_for(guild.me).manage_messages:
+            await ctx.send(_("I don't have the permission to pin messages in this channel."))
         else:
             await self.data.guild(guild).channels.register.set(channel.id)
             await ctx.send(_("The channel was successfully set."))

@@ -13,6 +13,7 @@ import csv
 import shutil
 
 from discord.ext import tasks
+from discord import Forbidden
 from random import choice, shuffle
 from itertools import islice
 from datetime import datetime, timedelta, timezone
@@ -402,7 +403,7 @@ class Match:
         bool
             ``False`` if the message couldn't be sent, and was sent in DM instead.
         """
-        return template.base_send_message(self, reset)
+        return await template.base_send_message(self, reset)
 
     async def start_stream(self):
         """
